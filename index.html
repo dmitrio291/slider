@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="libs/normalize/normalize.css">
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <section class="slider-section">
+    <button class="btn btn--orange demo-btn">Начать демонстрацию</button>
+
+    <div class="container">
+      <div class="slider slider--show swiper">
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide slider__slide">
+            <div class="slider__item">
+              <picture>
+                <source srcset="img/slide-big-1.jpg" media="(min-width: 1920px)">
+                <source srcset="img/slide-middle-1.jpg" media="(min-width: 1170px)">
+                <img class="slider__img" src="img/slide-small-1.jpg" alt="Слайд 1"/>
+              </picture>
+              <div class="slider__content">
+                <h3 class="slider__title">Этот текст добавлен для демонстрации на странице</h3>
+                <p class="slider__text slider__text--mobile">Тест на внимательность</p>
+                <p class="slider__text slider__text--desktop">Акция действует с 01.07.18 по 31.07.18</p>
+                <div class="slider__buttons">
+                  <a class="btn btn--orange" href="#">Подробнее</a>
+                  <a class="btn btn--transparent slider__all-actions-link" href="#">Все акции</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slider__slide">
+            <div class="slider__item">
+              <picture>
+                <source srcset="img/slide-big-2.jpg" media="(min-width: 1920px)">
+                <source srcset="img/slide-middle-2.jpg" media="(min-width: 1170px)">
+                <img class="slider__img" src="img/slide-small-2.jpg" alt="Слайд 2"/>
+              </picture>
+              <div class="slider__content">
+                <h3 class="slider__title">Этот текст добавлен для демонстрации на странице</h3>
+                <p class="slider__text slider__text--mobile">Тест на внимательность</p>
+                <p class="slider__text slider__text--desktop">Акция действует с 01.07.18 по 31.07.18</p>
+                <div class="slider__buttons">
+                  <a class="btn btn--orange" href="#">Подробнее</a>
+                  <a class="btn btn--transparent slider__all-actions-link" href="#">Все акции</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slider__slide">
+            <div class="slider__item">
+              <picture>
+                <source srcset="img/slide-big-3.jpg" media="(min-width: 1920px)">
+                <source srcset="img/slide-middle-3.jpg" media="(min-width: 1170px)">
+                <img class="slider__img" src="img/slide-small-3.jpg" alt="Слайд 3"/>
+              </picture>
+              <div class="slider__content">
+                <h3 class="slider__title">Этот текст добавлен для демонстрации на странице</h3>
+                <p class="slider__text slider__text--mobile">Тест на внимательность</p>
+                <p class="slider__text slider__text--desktop">Акция действует с 01.07.18 по 31.07.18</p>
+                <div class="slider__buttons">
+                  <a class="btn btn--orange" href="#">Подробнее</a>
+                  <a class="btn btn--transparent slider__all-actions-link" href="#">Все акции</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slider__slide">
+            <div class="slider__item">
+              <picture>
+                <source srcset="img/slide-big-4.jpg" media="(min-width: 1920px)">
+                <source srcset="img/slide-middle-4.jpg" media="(min-width: 1170px)">
+                <img class="slider__img" src="img/slide-small-4.jpg" alt="Слайд 4"/>
+              </picture>
+              <div class="slider__content">
+                <h3 class="slider__title">Этот текст добавлен для демонстрации на странице</h3>
+                <p class="slider__text slider__text--mobile">Тест на внимательность</p>
+                <p class="slider__text slider__text--desktop">Акция действует с 01.07.18 по 31.07.18</p>
+                <div class="slider__buttons">
+                  <a class="btn btn--orange" href="#">Подробнее</a>
+                  <a class="btn btn--transparent slider__all-actions-link" href="#">Все акции</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination slider__pagination"></div>
+
+        <div class="swiper-button-prev slider__btn slider__btn--prev"></div>
+        <div class="swiper-button-next slider__btn slider__btn--next"></div>
+
+        <ul class="slider__thumbs">
+          <li class="slider__thumbs-item">
+            <img class="slider__thumbs-preview" src="img/icon-1.jpg" alt="Превью">
+            <div>
+              <p class="slider__thumbs-actions">Акция действует с 01.07.18</p>
+              <p class="slider__thumbs-description">Этот текст добавлен для демонстрации на страницe</p>
+            </div>
+          </li>
+          <li class="slider__thumbs-item">
+            <img class="slider__thumbs-preview" src="img/icon-2.jpg" alt="Превью">
+            <div>
+              <p class="slider__thumbs-actions">Акция действует с 01.07.18</p>
+              <p class="slider__thumbs-description">Этот текст добавлен для демонстрации на страницe</p>
+            </div>
+          </li>
+          <li class="slider__thumbs-item">
+            <img class="slider__thumbs-preview" src="img/icon-3.jpg" alt="Превью">
+            <div>
+              <p class="slider__thumbs-actions">Акция действует с 01.07.18</p>
+              <p class="slider__thumbs-description">Этот текст добавлен для демонстрации на страницe</p>
+            </div>
+          </li>
+          <li class="slider__thumbs-item">
+            <img class="slider__thumbs-preview" src="img/icon-4.jpg" alt="Превью">
+            <div>
+              <p class="slider__thumbs-actions">Акция действует с 01.07.18</p>
+              <p class="slider__thumbs-description">Этот текст добавлен для демонстрации на страницe</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
