@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   sliderPreview.forEach((preview, index) => {
-    preview.addEventListener('click', function() {
+    preview.addEventListener('click', () => {
       swiper.slideTo(index);
     });
   });
