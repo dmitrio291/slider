@@ -27,27 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 5000);
   });
 
-  const slidesImg = [
-    "background-image: url('img/icon-1.jpg');", 
-    "background-image: url('img/icon-2.jpg');", 
-    "background-image: url('img/icon-3.jpg');", 
-    "background-image: url('img/icon-4.jpg');", 
-  ]
-
-  const slideText = [
-    "Акция действует с 01.07.18",
-    "Акция действует с 01.07.18",
-    "Акция действует с 01.07.18",
-    "Акция действует с 01.07.18",
-  ]
-
-  const slideDescription = [
-    "Этот текст добавлен для демонстрации на страницe",
-    "Этот текст добавлен для демонстрации на страницe",
-    "Этот текст добавлен для демонстрации на страницe",
-    "Этот текст добавлен для демонстрации на страницe",
-  ]
-
   const swiper = new Swiper('.swiper', {
     pagination: {
       el: '.slider__pagination',
@@ -62,24 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
       nextEl: '.slider__btn--next',
       prevEl: '.slider__btn--prev',
     },
-
-    // breakpoints: {
-    //   1170: {
-    //     pagination: {
-    //       renderBullet: function (index, className) {
-    //         return `
-    //           <div class="${className}">
-    //             <div class="slider__preview" style="${slidesImg[index]}"></div>
-    //             <div>
-    //               <p class="slider__actions">${slideText[index]}</p>
-    //               <p class="slider__description">${slideDescription[index]}</p>
-    //             </div>
-    //           </div>
-    //         `
-    //       }
-    //     },        
-    //   }
-    // }
   });
 
   sliderPreviewCallback();
