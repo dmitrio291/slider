@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sliderPreview.forEach((preview, index) => {
     preview.addEventListener('click', function() {
-      const indexItem = index;
       swiper.slideTo(index);
     });
   });
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 5000);
   });
 
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper(slider, {
     pagination: {
       el: '.slider__pagination',
       clickable: true
